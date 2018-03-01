@@ -1,0 +1,14 @@
+<div class="i">
+    <img ng-hide="info.avatar == ''" src="{{info.avatar}}" ><br>
+    <div ng-show="info.avatar == ''">{{info.name[0] + ' ' + info.last_name[0]}}</div>
+</div>
+<div class="name">
+    <b>Name: {{info.name}}</b><br>
+</div>
+<div class="last_name">
+    <b>Lastname: {{info.last_name}}</b><br>
+</div>
+<div class="gender">
+    <b>Gender: {{info.gender}}</b><br>
+</div>
+

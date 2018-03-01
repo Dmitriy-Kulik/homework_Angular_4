@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="node_modules/angular/angular.js" defer></script>
+
+    <script src="src/main.js" defer></script>
+</head>
+<body>
+<div class="wrapper" ng-class="{'app-loaded': true}">
+    <div class="cont" ng-controller="PeoplesController as p">
+        <div class="item" ng-repeat="people in p.peoples">
+            <customer-info info="people"></customer-info>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
